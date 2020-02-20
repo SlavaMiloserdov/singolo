@@ -5,6 +5,7 @@ html {
   font-family: "Lato";
 }
 
+/* Header */
 header {
   display: flex;
   height: 89px;
@@ -62,6 +63,10 @@ header {
   color: #f06c64;
 }
 
+/* Header */
+
+/* Slider */
+
 .slider {
   height: 600px;
   box-sizing: border-box;
@@ -73,6 +78,7 @@ header {
 
 .slider-container {
   width: 798px;
+  margin-left: -1px;
   margin-bottom: 3px;
   display: flex;
   justify-content: space-between;
@@ -89,19 +95,13 @@ header {
 }
 
 .next {
-  margin-right: 15px;
+  margin-right: 12px;
 }
 
-.prev a,
-.next a {
-  font-size: 36px;
-  text-decoration: none;
-  color: #ca4549;
-}
-
-.prev a:hover,
-.next a:hover {
-  color: #fff;
+.prev img:hover,
+.next img:hover {
+  border-radius: 2px;
+  background-color: #ffffffb2;
 }
 
 .vertical,
@@ -112,3 +112,5 @@ header {
 .vertical {
   margin-left: 1px;
 }
+
+/* Slider */
