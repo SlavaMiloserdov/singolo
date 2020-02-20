@@ -1,5 +1,5 @@
 html {
-  height: 100vh;
+  height: 1189px;
   width: 1020px;
   margin: 0 auto;
   font-family: "Lato";
@@ -7,7 +7,7 @@ html {
 
 header {
   display: flex;
-  height: 90px;
+  height: 89px;
   color: white;
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
@@ -58,13 +58,57 @@ header {
   color: #494e62;
 }
 
-/* .navbar ul li+li a::before {
-  content: ".";
-  position: absolute;
-  margin-left: -16px;
-  color: #494e62;
-} */
-
 .navbar ul li a:hover {
   color: #f06c64;
+}
+
+.slider {
+  height: 600px;
+  box-sizing: border-box;
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
+  display: flex;
+  justify-content: space-around;
+}
+
+.slider-container {
+  width: 798px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  font-weight: bold;
+  margin: auto 0;
+}
+
+.prev {
+  margin-left: 15px;
+}
+
+.next {
+  margin-right: 15px;
+}
+
+.prev a,
+.next a {
+  font-size: 36px;
+  text-decoration: none;
+  color: #ca4549;
+}
+
+.prev a:hover,
+.next a:hover {
+  color: #fff;
+}
+
+.vertical,
+.horizontal {
+  margin: auto 0;
+}
+
+.vertical {
+  margin-left: 1px;
 }
