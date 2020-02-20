@@ -114,3 +114,99 @@ header {
 }
 
 /* Slider */
+
+/* Services */
+
+.services {
+  height: 495px;
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #fff;
+}
+
+.services-container {
+  padding: 66px 40px;
+}
+
+.description {
+  height: 152px;
+}
+
+.description h1 {
+  font-size: 30px;
+  line-height: 18px;
+  padding-top: 2px;
+  height: 22px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  text-align: left;
+}
+
+.description p {
+  margin-top: 23px;
+  font-size: 19px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: justify;
+  word-spacing: -0.3px;
+  letter-spacing: -0.3px;
+}
+
+.advantages {
+  height: 247px;
+  width: 100%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 320px);
+}
+
+.advantages-item {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 7px;
+}
+
+.item-logo {
+  display: block;
+  margin: auto auto;
+}
+
+.advantages-item figure {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin-top: 2px;
+  background-image: url("assets/images/Ellipse.png");
+  background-repeat: no-repeat;
+}
+
+.item-description {
+  width: 220px;
+  margin-right: 13px;
+}
+
+.advantages-item h3 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+}
+
+.advantages-item p {
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  word-spacing: -2px;
+  letter-spacing: 0.2px;
+}
+
+
+
+/* Services */
