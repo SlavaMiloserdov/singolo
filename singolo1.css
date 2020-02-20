@@ -49,12 +49,21 @@ header {
   text-decoration: none;
 }
 
-.navbar ul li + li a::before {
+.navbar p {
+  position: absolute;
+  display: inline;
+  top: 38px;
+  margin-left: 13px;
+  font-weight: bold;
+  color: #494e62;
+}
+
+/* .navbar ul li+li a::before {
   content: ".";
   position: absolute;
   margin-left: -16px;
   color: #494e62;
-}
+} */
 
 .navbar ul li a:hover {
   color: #f06c64;
