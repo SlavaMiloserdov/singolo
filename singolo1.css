@@ -28,7 +28,8 @@ header {
 }
 
 .logo p {
-  position: absolute;
+  /* position: absolute; */
+  margin-left: -5px;
   color: #f06c64;
 }
 
@@ -144,14 +145,14 @@ header {
 
 .description p {
   margin-top: 23px;
-  font-size: 19px;
+  font-size: 1.2rem;
   line-height: 30px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
   text-align: justify;
-  word-spacing: -0.3px;
-  letter-spacing: -0.3px;
+  word-spacing: -0.6px;
+  letter-spacing: -0.45px;
 }
 
 .advantages {
