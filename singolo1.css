@@ -156,10 +156,11 @@ header {
 }
 
 .advantages {
-  height: 247px;
-  width: 100%;
+  height: 246px;
+  width: 940px;
+  margin-left: 1px;
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(3, 320px);
+  grid-template: repeat(2, 1fr) / 320px 319px 321px;
 }
 
 .advantages-item {
@@ -176,7 +177,7 @@ header {
 .advantages-item figure {
   display: flex;
   width: 60px;
-  height: 60px;
+  height: 59px;
   margin-top: 2px;
   background-image: url("assets/images/Ellipse.png");
   background-repeat: no-repeat;
@@ -184,7 +185,7 @@ header {
 
 .item-description {
   width: 220px;
-  margin-right: 13px;
+  margin-right: 14px;
 }
 
 .advantages-item h3 {
@@ -196,6 +197,7 @@ header {
 }
 
 .advantages-item p {
+  margin-left: 1px;
   margin-top: 10px;
   text-align: justify;
   font-size: 12px;
@@ -206,7 +208,5 @@ header {
   word-spacing: -2px;
   letter-spacing: 0.2px;
 }
-
-
 
 /* Services */
