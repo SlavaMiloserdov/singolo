@@ -100,7 +100,7 @@ header {
 .prev img:hover,
 .next img:hover {
   border-radius: 2px;
-  background-color: #ffffffb2;
+  background-color: #fff;
 }
 
 .vertical,
@@ -143,7 +143,7 @@ header {
 
 .description p {
   margin-top: 23px;
-  font-size: 1.2rem;
+  font-size: 5mm;
   line-height: 30px;
   color: #767e9e;
   font-family: "Lato";
