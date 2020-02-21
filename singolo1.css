@@ -140,7 +140,6 @@ header {
   font-family: "Lato";
   font-weight: 900;
   letter-spacing: -0.2px;
-  text-align: left;
 }
 
 .description p {
@@ -177,10 +176,8 @@ header {
 .advantages-item figure {
   display: flex;
   width: 60px;
-  height: 59px;
-  margin-top: 2px;
-  background-image: url("assets/images/Ellipse.png");
-  background-repeat: no-repeat;
+  height: 60px;
+  margin-top: 1px;
 }
 
 .item-description {
