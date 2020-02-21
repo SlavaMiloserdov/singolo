@@ -52,10 +52,8 @@ header {
 }
 
 .navbar p {
-  position: absolute;
-  display: inline;
+  margin-top: -3px;
   top: 38px;
-  margin-left: 13px;
   font-weight: bold;
   color: #494e62;
 }
