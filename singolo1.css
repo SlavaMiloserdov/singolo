@@ -160,7 +160,7 @@ header {
   width: 940px;
   margin-left: 1px;
   display: grid;
-  grid-template: repeat(2, 1fr) / 320px 319px 321px;
+  grid-template: repeat(2, 1fr) / repeat(3, 319px);
 }
 
 .advantages-item {
@@ -185,7 +185,7 @@ header {
 
 .item-description {
   width: 220px;
-  margin-right: 14px;
+  margin-right: 12px;
 }
 
 .advantages-item h3 {
