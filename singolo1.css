@@ -5,6 +5,10 @@ html {
   font-family: "Lato";
 }
 
+.toUpperCase {
+  text-transform: uppercase;
+}
+
 /* Header */
 header {
   display: flex;
@@ -123,17 +127,16 @@ header {
 }
 
 .services-container {
-  padding: 66px 40px;
+  padding: 68px 40px 30px 40px;
 }
 
 .description {
-  height: 152px;
+  height: 150px;
 }
 
 .description h1 {
   font-size: 30px;
   line-height: 18px;
-  padding-top: 2px;
   height: 22px;
   color: #666d89;
   font-family: "Lato";
@@ -154,17 +157,14 @@ header {
 }
 
 .advantages {
-  height: 246px;
+  height: 245px;
   width: 940px;
-  margin-left: 1px;
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(3, 319px);
+  grid-template: repeat(2, 1fr) / repeat(3, 320px);
 }
 
 .advantages-item {
   display: flex;
-  justify-content: space-between;
-  margin-right: 7px;
 }
 
 .item-logo {
@@ -181,7 +181,7 @@ header {
 
 .item-description {
   width: 220px;
-  margin-right: 12px;
+  margin-left: 20px;
 }
 
 .advantages-item h3 {
@@ -193,7 +193,6 @@ header {
 }
 
 .advantages-item p {
-  margin-left: 1px;
   margin-top: 10px;
   text-align: justify;
   font-size: 12px;
