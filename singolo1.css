@@ -146,7 +146,7 @@ header {
 
 .description p {
   margin-top: 23px;
-  font-size: 5mm;
+  font-size: 19px;
   line-height: 30px;
   color: #767e9e;
   font-family: "Lato";
@@ -169,14 +169,13 @@ header {
 
 .item-logo {
   display: block;
-  margin: auto auto;
+  margin-left: 1px;
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .advantages-item figure {
-  display: flex;
-  width: 60px;
-  height: 60px;
-  margin-top: 1px;
+  margin-top: 2px;
 }
 
 .item-description {
