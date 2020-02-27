@@ -1,0 +1,79 @@
+body {
+  width: 1020px;
+  height: 1604px;
+  margin: 0 auto;
+}
+
+.portfolio {
+  display: flex;
+  height: 864px;
+  width: 1020px;
+  background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+}
+
+.header {
+  width: 939px;
+  height: 109px;
+  margin: 69px auto 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+}
+
+.header p {
+  margin-top: 27px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.header nav {
+  margin-top: 11px;
+}
+
+.header ul {
+  width: 287px;
+  height: 22px;
+  margin-left: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header li {
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid #666d89;
+  cursor: pointer;
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
+}
+
+.header li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header li:hover {
+  color: #c5c5c5;
+  border: 1px solid #c5c5c5;
+}
+
+footer {
+  height: 728px;
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #fff;
+}
