@@ -1,79 +1,99 @@
-/* .wrapper {
-  margin: 0 auto;
-  display: flex;
-  height: 864px;
-  width: 1020px;
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Lato", Verdana, serif;
+  color: #767e9e;
+
+}
+
+.wrapper {
+  max-width: 1020px;
+  margin: auto;
+}
+
+/* Secton Portfolio */
+
+.portfolio {
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
 }
 
-.header {
+.portfolio__wrapper {
   width: 939px;
-  height: 109px;
-  margin: 69px auto 0 auto;
+  margin: auto;
 }
 
-.section__header {
-  font-size: 30px;
-  line-height: 30px;
-  color: #666d89;
-  font-family: "Lato";
+.section-header {
+  padding-top: 38px;
+}
+
+.section-header__title {
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: 900;
+  letter-spacing: -0.2px;
+  color: #666d89;
 }
 
-.header p {
-  margin-top: 27px;
-  font-size: 18px;
-  line-height: 30px;
-  color: #767e9e;
-  font-family: "Lato", Verdana, serif;
+.section-header__description {
+  font-size: 1.8rem;
+  line-height: 3rem;
   font-weight: 300;
+  margin-top: -4px;
+  margin-bottom: 11px;
 }
 
-.header nav {
-  margin-top: 11px;
-}
-
-.header ul {
+.section-header__navigation {
   width: 287px;
-  height: 22px;
-  margin-left: 1px;
+  padding-left: 1px;
+}
+
+.portfolio-navigation {
   display: flex;
   justify-content: space-between;
+
+  /* Сомнения */
+  height: 22px;
+  margin: 0;
+  padding: 0;
 }
 
-.header li {
-  padding: 0 6px;
-  font-size: 12px;
-  line-height: 22px;
-  color: #767e9e;
-  font-family: "Lato", Verdana, serif;
-  font-weight: 400;
-  border-radius: 5px;
-  border: 1px solid #666d89;
-  cursor: pointer;
-  vertical-align: middle;
-  align-items: center;
+.portfolio-navigation li {
   display: flex;
+  align-items: center;
+  padding: 0 6px;
+  border: 1px solid #666d89;
+  border-radius: 5px;
+  list-style: none;
+  cursor: pointer;
 }
 
-.header li a {
+.portfolio-navigation li:nth-child(1) {
+  padding: 0 7px 0 6px;
+}
+
+.portfolio-navigation li:nth-child(3) {
+  padding: 0 5px 0 5px;
+}
+
+.portfolio-navigation a {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
   text-decoration: none;
   color: inherit;
 }
 
-.header li:hover {
-  color: #c5c5c5;
-  border: 1px solid #c5c5c5;
+.layout-4-column {
+  padding-top: 19px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  grid-gap: 20px 20px;
+  padding-bottom: 67px;
 }
-
-footer {
-  height: 728px;
-  background-color: #f2f2f2;
-  border-bottom: 6px solid #fff;
-} */
-
-/* Secton Portfolio */
 
 /* Secton Portfolio */
 
