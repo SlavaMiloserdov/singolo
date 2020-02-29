@@ -1,10 +1,5 @@
-body {
-  width: 1020px;
-  height: 1604px;
+/* .wrapper {
   margin: 0 auto;
-}
-
-.portfolio {
   display: flex;
   height: 864px;
   width: 1020px;
@@ -18,9 +13,9 @@ body {
   margin: 69px auto 0 auto;
 }
 
-h1 {
+.section__header {
   font-size: 30px;
-  line-height: 18px;
+  line-height: 30px;
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
@@ -31,7 +26,7 @@ h1 {
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, serif;
   font-weight: 300;
 }
 
@@ -52,7 +47,7 @@ h1 {
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, serif;
   font-weight: 400;
   border-radius: 5px;
   border: 1px solid #666d89;
@@ -76,4 +71,12 @@ footer {
   height: 728px;
   background-color: #f2f2f2;
   border-bottom: 6px solid #fff;
-}
+} */
+
+/* Secton Portfolio */
+
+/* Secton Portfolio */
+
+/* Secton About-Us */
+
+/* Secton About-Us */
