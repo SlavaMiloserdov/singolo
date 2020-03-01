@@ -1,8 +1,3 @@
-:root {
-  --text-color: #767e9e;
-  --text-title-color: #666d89;
-}
-
 html {
   font-size: 10px;
 }
@@ -10,7 +5,7 @@ html {
 body {
   font-size: 1.8rem;
   font-family: "Lato", Verdana, serif;
-  color: var(--text-color);
+  color: #767e9e;
 }
 
 .wrapper {
@@ -22,6 +17,10 @@ body {
   width: 939px;
   margin: auto;
   padding-bottom: 67.17px;
+}
+
+.text_color_title {
+  color: #666d89;
 }
 
 /* Section Portfolio */
@@ -41,7 +40,6 @@ body {
   line-height: 3rem;
   font-weight: 900;
   letter-spacing: -0.2px;
-  color: var(--text-title-color);
 }
 
 .section-header__description {
@@ -143,7 +141,6 @@ body {
 .employee__name {
   font-size: 1.8rem;
   line-height: 1.8rem;
-  color: #666d89;
   font-weight: 900;
   margin-top: 14px;
   letter-spacing: -0.13px;
@@ -184,3 +181,41 @@ body {
 }
 
 /* Section About-Us */
+
+/* Styles for Firefox and Edge */
+
+@-moz-document url-prefix() {
+
+  p,
+  a,
+  .first-employee p.employee__title {
+    word-spacing: -1.4px;
+  }
+
+  .employee__title {
+    word-spacing: 0.2px;
+  }
+
+  .portfolio-navigation__links a {
+    letter-spacing: 0.1px;
+  }
+}
+
+@supports (-ms-ime-align:auto) {
+
+  p,
+  a,
+  .first-employee p.employee__title {
+    word-spacing: -1.4px;
+  }
+
+  .employee__title {
+    word-spacing: 0.2px;
+  }
+
+  .portfolio-navigation__links a {
+    letter-spacing: 0.1px;
+  }
+}
+
+/* Styles for Firefox and Edge */
