@@ -1,3 +1,8 @@
+:root {
+  --text-color: #767e9e;
+  --text-title-color: #666d89;
+}
+
 html {
   font-size: 10px;
 }
@@ -5,7 +10,7 @@ html {
 body {
   font-size: 1.8rem;
   font-family: "Lato", Verdana, serif;
-  color: #767e9e;
+  color: var(--text-color);
 }
 
 .wrapper {
@@ -36,11 +41,10 @@ body {
   line-height: 3rem;
   font-weight: 900;
   letter-spacing: -0.2px;
-  color: #666d89;
+  color: var(--text-title-color);
 }
 
 .section-header__description {
-  font-size: 1.8rem;
   line-height: 3rem;
   font-weight: 300;
   margin-top: -4px;
@@ -126,33 +130,51 @@ body {
   width: 300px;
 }
 
+.employee__photo {
+  margin-left: 1px;
+}
+
+.employee:nth-child(even) .employee__photo {
+  margin: 0;
+}
+
 .employee__name {
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
   color: #666d89;
   font-weight: 900;
   margin-top: 14px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.13px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .employee__title {
-  font-size: 12px;
-  line-height: 21px;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
   margin-top: -8px;
   margin-bottom: 24px;
   text-align: justify;
-  word-spacing: -1px;
+  word-spacing: -0.5px;
+  letter-spacing: 0.09px;
+}
+
+.employee:nth-child(1) .employee__title {
+  letter-spacing: 0;
 }
 
 .social-media {
   display: flex;
   justify-content: space-between;
   width: 152px;
-  margin-left: 1px;
 }
 
 .employee__social-media {
-  padding-left: 1px;
+  margin-left: 1px;
+}
+
+.employee:nth-child(1) .employee__social-media {
+  margin-left: 2px;
 }
 
 .social-media__ico {
