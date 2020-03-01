@@ -6,7 +6,6 @@ body {
   font-size: 1.8rem;
   font-family: "Lato", Verdana, serif;
   color: #767e9e;
-
 }
 
 .wrapper {
@@ -57,8 +56,6 @@ body {
 .portfolio-navigation {
   display: flex;
   justify-content: space-between;
-
-  /* Сомнения */
   height: 22px;
   margin: 0;
   padding: 0;
@@ -72,6 +69,11 @@ body {
   border-radius: 5px;
   list-style: none;
   cursor: pointer;
+}
+
+.portfolio-navigation li:hover {
+  color: #dedede;
+  border: 1px solid #c5c5c5;
 }
 
 .portfolio-navigation li:nth-child(1) {
