@@ -21,10 +21,10 @@ body {
 .section__wrapper {
   width: 939px;
   margin: auto;
-  padding-bottom: 67px;
+  padding-bottom: 67.17px;
 }
 
-/* Secton Portfolio */
+/* Section Portfolio */
 
 .portfolio {
   background-color: #2d303a;
@@ -106,9 +106,9 @@ body {
   display: none;
 }
 
-/* Secton Portfolio */
+/* Section Portfolio */
 
-/* Secton About-Us */
+/* Section About-Us */
 
 .about-us {
   background-color: #f2f2f2;
@@ -121,21 +121,23 @@ body {
 
 .layout-3-column {
   padding-top: 34px;
-  margin-left: -1px;
   display: flex;
-  justify-content: space-between;
 }
 
 .employee {
   width: 300px;
 }
 
-.employee__photo {
-  margin-left: 1px;
+.second-employee {
+  padding-left: 19px;
 }
 
-.employee:nth-child(even) .employee__photo {
-  margin: 0;
+.third-employee {
+  padding-left: 20px;
+}
+
+.third-employee>img {
+  padding-left: 1px;
 }
 
 .employee__name {
@@ -149,18 +151,22 @@ body {
   overflow: hidden;
 }
 
+.first-employee .employee__name {
+  margin-left: -1px;
+}
+
 .employee__title {
   font-size: 1.2rem;
   line-height: 2.1rem;
   margin-top: -8px;
   margin-bottom: 24px;
   text-align: justify;
-  word-spacing: -0.5px;
-  letter-spacing: 0.09px;
+  word-spacing: 0.5px;
+  letter-spacing: -0.05px;
 }
 
-.employee:nth-child(1) .employee__title {
-  letter-spacing: 0;
+.first-employee .employee__title {
+  word-spacing: -0.5px;
 }
 
 .social-media {
@@ -173,12 +179,8 @@ body {
   margin-left: 1px;
 }
 
-.employee:nth-child(1) .employee__social-media {
-  margin-left: 2px;
-}
-
 .social-media__ico {
   cursor: pointer;
 }
 
-/* Secton About-Us */
+/* Section About-Us */
