@@ -78,8 +78,8 @@ form textarea {
   border: none;
 }
 
-form input + input,
-form input + textarea {
+form input+input,
+form input+textarea {
   margin-top: 16px;
 }
 
@@ -116,7 +116,7 @@ form input + textarea {
 }
 
 .contact-info__title {
-  margin: 0 0 0 0.5px;
+  margin: 0;
   font-size: 1.8rem;
   line-height: 1.8rem;
   font-weight: 900;
@@ -125,13 +125,12 @@ form input + textarea {
 
 .contact-info__description,
 .contact-info__contacts {
-  margin-top: 10px;
+  margin: 10px 0 0 -0.5px;
   font-size: 1.2rem;
   line-height: 2.1rem;
   font-weight: 400;
   text-align: justify;
   word-spacing: -1px;
-  margin-bottom: 0;
 }
 
 .contact-info__contacts {
@@ -163,7 +162,7 @@ form input + textarea {
 .contact-info__phone a,
 .contact-info__mail a {
   display: block;
-  margin-left: 22.8px;
+  margin-left: 23.2px;
   margin-top: -22px;
   word-spacing: 0.1px;
 }
@@ -174,9 +173,47 @@ form input + textarea {
 
 /* Section Get a Quote */
 
+/* Section Footer */
+
+.footer {
+  height: 76px;
+  background-color: #2d303a;
+}
+
+.wrapper__footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  padding-left: 2px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  word-spacing: -1px;
+  font-weight: 400;
+  color: #666d89;
+}
+
+
+.social-media {
+  width: 152px;
+  padding-top: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media__ico {
+  height: 32px;
+  cursor: pointer;
+}
+
+/* Section Footer */
+
 /* Styles for Firefox and Edge */
 
 @-moz-document url-prefix() {
+
   p,
   a {
     word-spacing: -1.4px;
@@ -184,6 +221,7 @@ form input + textarea {
 }
 
 @supports (-ms-ime-align: auto) {
+
   p,
   a {
     word-spacing: -1.4px;
