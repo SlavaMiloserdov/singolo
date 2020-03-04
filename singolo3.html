@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="singolo3.css" />
+    <link rel="stylesheet" href="assets/fonts/lato.css" />
+    <title>Singolo</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="get-a-quote">
+        <div class="section__wrapper">
+          <div class="section-header">
+            <h2 class="section-header__title text_color_title_light">
+              Get a Quote
+            </h2>
+            <p class="section-header__description">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris
+              condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
+              ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
+              cursus commodo, tortor mauris condimentum nibh.
+            </p>
+          </div>
+          <div class="layout-2-column">
+            <form action="URL" method="POST" class="get-a-quote-form">
+              <input
+                type="text"
+                class="get-a-quote-form__name"
+                placeholder="Name (Required)"
+                pattern="[a-zA-Zа-яА-Я]+"
+                required
+              />
+              <input
+                type="email"
+                class="get-a-quote-form__email"
+                placeholder="Email (Required)"
+                required
+              />
+              <input
+                type="text"
+                class="get-a-quote-form__subject"
+                placeholder="Subject"
+              />
+              <textarea
+                name="describe"
+                class="get-a-quote-form__description"
+                cols="30"
+                rows="8"
+                placeholder="Describe your project in detail..."
+              ></textarea>
+              <button type="submit" class="get-a-quote-form__button">
+                Submit
+              </button>
+            </form>
+            <div class="contact-info">
+              <h3 class="contact-info__title">Contact Information</h3>
+              <p class="contact-info__description">
+                Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra
+                nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat
+                libero. Nulla sed nunc et tortor luctus faucibus. Morbi at
+                aliquet turpis, et consequat felis
+              </p>
+              <div class="contacts">
+                <div class="contacts__location">
+                  <img
+                    src="assets/images/get-a-quote-icons/location.png"
+                    alt="image didn't load"
+                    class="ico_location"
+                  />
+                  <a href="#">Elm St. 14/05 Lost City </a>
+                </div>
+                <div class="contacts__phone">
+                  <img
+                    src="assets/images/get-a-quote-icons/phone.png"
+                    alt="image didn't load"
+                    class="ico_phone"
+                  />
+                  <a href="tel:03528 331 86 35">03528 331 86 35</a>
+                </div>
+                <div class="contacts__mail">
+                  <img
+                    src="assets/images/get-a-quote-icons/mail.png"
+                    alt="image didn't load"
+                    class="ico_mail"
+                  />
+                  <a href="mailto:info@singolo.com">info@singolo.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="section__wrapper footer__wrapper">
+          <p class="copyright">&#169; Copyright 2013</p>
+          <div class="social-media">
+            <a href="#"
+              ><img
+                src="assets/images/social-media-icons/facebook.png"
+                alt="image didn't load"
+                class="social-media__ico"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/images/social-media-icons/google.png"
+                alt="image didn't load"
+                class="social-media__ico"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/images/social-media-icons/twitter.png"
+                alt="image didn't load"
+                class="social-media__ico"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/images/social-media-icons/linkedin.png"
+                alt="image didn't load"
+                class="social-media__ico"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
