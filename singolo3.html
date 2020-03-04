@@ -33,11 +33,14 @@
                   type="text"
                   class="form__name"
                   placeholder="Name (Required)"
+                  pattern="[a-zA-Zа-яА-Я]+"
+                  required
                 />
                 <input
                   type="email"
                   class="form__email"
                   placeholder="Email (Required)"
+                  required
                 />
                 <input
                   type="text"
@@ -96,7 +99,7 @@
         </div>
       </section>
       <footer class="footer">
-        <div class="section__wrapper wrapper__footer">
+        <div class="section__wrapper footer__wrapper">
           <p class="copyright">&#169; Copyright 2013</p>
           <div class="social-media">
             <img
