@@ -39,7 +39,7 @@ body {
   font-size: 3rem;
   line-height: 3rem;
   font-weight: 900;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.02rem;
 }
 
 .section-header__description {
@@ -57,34 +57,29 @@ body {
   justify-content: space-between;
 }
 
-.get-a-quote__form {
+.get-a-quote-form {
   width: 619px;
-}
-
-form {
   display: flex;
   flex-direction: column;
 }
 
-form input,
-form textarea {
+.get-a-quote-form input,
+.get-a-quote-form textarea {
   padding: 8px 0 8px 14.5px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border: none;
   font-size: 1.2rem;
   line-height: 2.2rem;
   font-weight: 400;
-  background-color: #d6564f;
-  border-radius: 5px;
   color: #f48c8f;
-  border: none;
+  background-color: #d6564f;
 }
 
-form input + input,
-form input + textarea {
-  margin-top: 16px;
-}
-
-.form__description {
+textarea.get-a-quote-form__description {
   height: 187px;
+  margin-bottom: 0;
+  padding-top: 7px;
   border: none;
   overflow: auto;
   outline: none;
@@ -92,7 +87,6 @@ form input + textarea {
   -moz-box-shadow: none;
   box-shadow: none;
   resize: none;
-  padding-top: 7px;
 }
 
 ::placeholder {
@@ -100,16 +94,16 @@ form input + textarea {
   opacity: 1;
 }
 
-.form__button {
+.get-a-quote-form__button {
   width: 90px;
   margin: 20px auto 0 auto;
-  color: #f0d8d9;
   border: 2px solid #a14949;
   border-radius: 5px;
+  color: #f0d8d9;
   background-color: #d6564f;
 }
 
-.form__button:hover {
+.get-a-quote-form__button:hover {
   background-color: #2d303a;
 }
 
@@ -122,22 +116,22 @@ form input + textarea {
   font-size: 1.8rem;
   line-height: 1.8rem;
   font-weight: 900;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.01rem;
 }
 
 .contact-info__description,
-.contact-info__contacts {
+.contacts {
   margin: 10px 0 0 -0.5px;
   font-size: 1.2rem;
   line-height: 2.1rem;
   font-weight: 400;
   text-align: justify;
-  word-spacing: -1px;
+  word-spacing: -0.1rem;
 }
 
-.contact-info__contacts {
+.contacts {
   padding-top: 14px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .ico_location {
@@ -154,23 +148,15 @@ form input + textarea {
   margin-top: 9px;
 }
 
-.contact-info__contacts a {
-  margin-left: 9px;
-  color: inherit;
-  text-decoration: none;
-}
-
-.contact-info__location a,
-.contact-info__phone a,
-.contact-info__mail a {
+.contacts__location a,
+.contacts__phone a,
+.contacts__mail a {
   display: block;
   margin-left: 23.2px;
   margin-top: -22px;
-  word-spacing: 0.1px;
-}
-
-.contact-info__contacts p {
-  margin: 0;
+  word-spacing: 0.01rem;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Section Get a Quote */
@@ -192,8 +178,8 @@ form input + textarea {
   padding-left: 2px;
   font-size: 1.2rem;
   line-height: 1.2rem;
-  letter-spacing: -0.1px;
-  word-spacing: -0.4px;
+  letter-spacing: -0.01rem;
+  word-spacing: -0.04rem;
   font-weight: 400;
   color: #666d89;
 }
@@ -207,7 +193,6 @@ form input + textarea {
 
 .social-media__ico {
   height: 32px;
-  cursor: pointer;
 }
 
 /* Section Footer */
@@ -217,24 +202,34 @@ form input + textarea {
 @-moz-document url-prefix() {
   p,
   a {
-    word-spacing: -1.4px;
+    word-spacing: -0.14rem;
   }
 
-  form input,
-  form textarea {
-    letter-spacing: 0.13px;
-    word-spacing: -0.7px;
+  input:required {
+    box-shadow: none;
   }
 
-  .form__subject,
-  .form__description {
+  .get-a-quote-form input,
+  .get-a-quote-form textarea {
+    letter-spacing: 0.013rem;
+    word-spacing: -0.07rem;
+  }
+
+  .get-a-quote-form__subject,
+  textarea.get-a-quote-form__description {
     letter-spacing: 0;
-    word-spacing: -0.15px;
+    word-spacing: -0.015rem;
   }
 
   .contact-info__description {
-    letter-spacing: 0.1px;
-    word-spacing: -1.9px;
+    letter-spacing: 0.01rem;
+    word-spacing: -0.19rem;
+  }
+
+  .contacts__location a,
+  .contacts__phone a {
+    word-spacing: -0.02rem;
+    letter-spacing: -0.007rem;
   }
 
   .section-header__description {
@@ -249,24 +244,34 @@ form input + textarea {
 @supports (-ms-ime-align: auto) {
   p,
   a {
-    word-spacing: -1.4px;
+    word-spacing: -0.14rem;
   }
 
-  form input,
-  form textarea {
-    letter-spacing: 0.13px;
-    word-spacing: -0.7px;
+  input:required {
+    box-shadow: none;
   }
 
-  .form__subject,
-  .form__description {
+  .get-a-quote-form input,
+  .get-a-quote-form textarea {
+    letter-spacing: 0.013rem;
+    word-spacing: -0.07rem;
+  }
+
+  .get-a-quote-form__subject,
+  textarea.get-a-quote-form__description {
     letter-spacing: 0;
-    word-spacing: -0.15px;
+    word-spacing: -0.015rem;
   }
 
   .contact-info__description {
-    letter-spacing: 0.1px;
-    word-spacing: -1.9px;
+    letter-spacing: 0.01rem;
+    word-spacing: -0.19rem;
+  }
+
+  .contacts__location a,
+  .contacts__phone a {
+    word-spacing: -0.02rem;
+    letter-spacing: -0.007rem;
   }
 
   .section-header__description {
@@ -282,4 +287,4 @@ form input + textarea {
   color: #f48c8f;
 }
 
-/* Styles for Firefox and Edge */
+/* Styles for Firefox and old version Edge */
