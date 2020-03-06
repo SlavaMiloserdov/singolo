@@ -18,6 +18,27 @@ body {
   margin: auto;
 }
 
+.section-header {
+  padding-top: 37px;
+  padding-left: 0.5px;
+}
+
+.section-header__title {
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+
+.section-header__description {
+  line-height: 3rem;
+  font-weight: 300;
+  margin-top: -4px;
+  margin-bottom: 11px;
+  text-align: justify;
+}
+
 .layout-3-column {
   padding-top: 34px;
   display: flex;
@@ -342,7 +363,15 @@ body {
   border-bottom: 6px solid #323746;
 }
 
-.section-header {
+.portfolio__wrapper {
+  padding-bottom: 67px;
+}
+
+.portfolio .section-header {
+  padding-left: 0.5px;
+}
+
+/* .section-header {
   padding-top: 38px;
 }
 
@@ -360,7 +389,7 @@ body {
   margin-top: -4px;
   margin-bottom: 11px;
   text-align: justify;
-}
+} */
 
 .portfolio-navigation {
   padding-left: 1px;
@@ -429,6 +458,14 @@ body {
   border-bottom: 6px solid #fff;
 }
 
+.about-us__wrapper {
+  padding-bottom: 67px;
+}
+
+.about-us .section-header {
+  padding-top: 38px;
+}
+
 .about-us .section-header__title {
   margin-top: 24px;
 }
@@ -455,6 +492,7 @@ body {
 }
 
 .employee__name {
+  margin-left: 0.5px;
   font-size: 1.8rem;
   line-height: 1.8rem;
   font-weight: 900;
@@ -465,21 +503,26 @@ body {
 }
 
 .first-employee .employee__name {
-  margin-left: -1px;
+  margin-left: -0.5px;
 }
 
 .employee__title {
+  margin: -8px 0 24px 1px;
   font-size: 1.2rem;
   line-height: 2.1rem;
-  margin-top: -8px;
-  margin-bottom: 24px;
   text-align: justify;
-  word-spacing: 0.5px;
-  letter-spacing: -0.05px;
+  word-spacing: 0.025rem;
+  letter-spacing: -0.002rem;
 }
 
 .first-employee .employee__title {
   word-spacing: -0.5px;
+  margin-left: 0;
+}
+
+.second-employee .employee__content,
+.third-employee .employee__content {
+  width: 301.5px;
 }
 
 .social-media {
@@ -563,7 +606,7 @@ body {
   border-bottom: 6px solid #ea676b;
 }
 
-.section-header {
+/* .section-header {
   padding-top: 37px;
 }
 
@@ -581,7 +624,7 @@ body {
   line-height: 3rem;
   font-weight: 300;
   text-align: justify;
-}
+} */
 
 .layout-2-column {
   padding-top: 33px;
@@ -717,16 +760,16 @@ textarea.get-a-quote-form__description {
   color: #666d89;
 }
 
-.social-media {
+/*! .social-media {
   width: 152px;
   padding-top: 2px;
   display: flex;
   justify-content: space-between;
-}
+} */
 
-.social-media__ico {
+/*! .social-media__ico {
   height: 32px;
-}
+} */
 
 /* Section Footer */
 
