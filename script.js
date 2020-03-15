@@ -69,3 +69,21 @@ document
   });
 
 // Carousel
+
+let iphonesVertical = document.querySelectorAll(".slide__iphone-vertical");
+iphonesVertical.forEach(iphone =>
+  iphone.addEventListener("click", () => {
+    iphonesVertical.forEach(item => {
+      item.classList.toggle("slide__iphone-vertical_off");
+    });
+  })
+);
+
+let iphonesHorizontal = document.querySelectorAll(".slide__iphone-horizontal");
+iphonesHorizontal.forEach(iphone =>
+  iphone.addEventListener("click", () => {
+    iphonesHorizontal.forEach(item => {
+      item.classList.toggle("slide__iphone-horizontal_off");
+    });
+  })
+);

@@ -194,14 +194,24 @@ body {
   opacity: 1;
 }
 
-.slide__iphone-vertical {
+.slide__iphone-vertical,
+.slide__iphone-vertical_off {
   height: 483px;
   margin: 53px 0 0 112px;
 }
 
-.slide__iphone-horizontal {
+.slide__iphone-horizontal,
+.slide__iphone-horizontal_off {
   height: 240px;
   margin: 174px 111px 0 0;
+}
+
+.slide__iphone-vertical_off {
+  display: none;
+}
+
+.slide__iphone-horizontal_off {
+  display: none;
 }
 
 /* Carousel  */
