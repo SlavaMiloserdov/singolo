@@ -60,6 +60,10 @@ body {
   order: 1;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* Header */
 
 .header {
@@ -139,6 +143,10 @@ body {
 
 .navigation__link_checked {
   color: #f06c64;
+}
+
+.d-none {
+  display: none;
 }
 
 /* Header */
@@ -238,6 +246,8 @@ body {
 .button_vertical-iphone:hover,
 .button_horizontal-iphone:hover {
   cursor: pointer;
+  background-color: #0000000f;
+  border-radius: 20px;
 }
 
 /* Carousel  */
@@ -453,7 +463,8 @@ body {
 }
 
 .portfolio__image_border {
-  border: 5px solid #F06C64;
+  /* border: 5px solid #F06C64; */
+  box-shadow: 0 0 0 5px #F06C64;
 }
 
 /* Section Portfolio */

@@ -128,7 +128,7 @@ document
   .querySelector(".portfolio-navigation__categories")
   .addEventListener("click", portfolioNavigationHandler);
 
-const choosePicture = event => {
+const pictureHandler = event => {
   if (event.target.classList.contains("portfolio__image_border")) {
     event.target.classList.remove("portfolio__image_border");
   } else {
@@ -140,29 +140,95 @@ const choosePicture = event => {
 };
 
 picturesPortfolio.forEach(picture =>
-  picture.addEventListener("click", choosePicture)
+  picture.addEventListener("click", pictureHandler)
 );
 // Portfolio
 
 // Get a Quote
 
-const actionSubmit = event => {
+const submitHandler = event => {
   event.preventDefault();
-  let subject = event.target.elements[2].value || "Without subject";
-  let describe = event.target.elements[3].value || "Without description";
 
-  if (event.target.elements[2].value === "Singolo") {
-    subject = "Subject: Singolo";
-  }
-  if (event.target.elements[3].value === "Portfolio project") {
-    describe = "Description: Portfolio project";
+  // let subject = event.target.elements[2].value || "Without subject";
+  // let description = event.target.elements[3].value || "Without description";
+
+  // if (event.target.elements[2].value === "Singolo") {
+  //   subject = "Subject: Singolo";
+  // }
+
+  // if (event.target.elements[3].value === "Portfolio project") {
+  //   description = "Description: Portfolio project";
+  // }
+
+  let subject = event.target.elements[2].value;
+  let description = event.target.elements[3].value;
+  switch (subject) {
+    case "Singolo":
+      subject = "Subject: Singolo";
+      break;
+    case "":
+      subject = "Without subject";
+      break;
+    default:
+      subject = `Subject: ${subject}`;
+      break;
   }
 
-  alert(`The letter was sent\n${subject}\n${describe}`);
+  switch (description) {
+    case "Portfolio project":
+      description = "Description: Portfolio project";
+      break;
+    case "":
+      description = "Without description";
+      break;
+    default:
+      description = `Description: ${description}`;
+      break;
+  }
+
+  let fragment = document.createDocumentFragment();
+  let modalWindow = document.createElement("div");
+  let modalContent = document.createElement("div");
+  let contentTitle = document.createElement("h3");
+  contentTitle.textContent = "The letter was sent";
+  let contentSubject = document.createElement("p");
+  contentSubject.textContent = subject;
+  let contentDescription = document.createElement("p");
+  contentDescription.textContent = description;
+
+  let modalButton = document.createElement("button");
+  modalButton.textContent = "OK";
+  modalButton.classList.add("modal-button");
+
+  modalWindow.style =
+    "position: fixed; z-index: 1;width: 100%;height: 100%;overflow: auto;background-color: rgba(0,0,0,0.4);left: 0;top: 0;";
+  modalContent.style =
+    "background-color: #fff; margin: auto; padding: 20px; border: 1px solid #888; width: 60%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;";
+  contentSubject.style = "text-overflow: ellipsis; overflow: hidden;";
+  contentDescription.style = "text-overflow: ellipsis; overflow: hidden;";
+  modalButton.style =
+    "color: #767e9e; font-size: 28px; font-weight: bold; border: 1px solid #767e9e; border-radius: 7px;";
+
+  modalButton.onmouseover = function() {
+    this.classList.add("cursor-pointer");
+  };
+
+  modalContent.insertAdjacentElement("afterbegin", contentTitle);
+  modalContent.insertAdjacentElement("beforeend", contentSubject);
+  modalContent.insertAdjacentElement("beforeend", contentDescription);
+  modalContent.insertAdjacentElement("beforeend", modalButton);
+  modalWindow.insertAdjacentElement("afterbegin", modalContent);
+  modalWindow.classList.add("modal-window");
+  fragment.appendChild(modalWindow);
+  document.body.appendChild(fragment);
+
+  document.querySelector(".modal-button").addEventListener("click", () => {
+    document.querySelector(".modal-window").remove();
+  });
 };
 
 document
   .querySelector(".get-a-quote-form")
-  .addEventListener("submit", actionSubmit);
+  .addEventListener("submit", submitHandler);
 
 // Get a Quote
