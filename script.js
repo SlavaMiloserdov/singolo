@@ -14,6 +14,7 @@ document
   .addEventListener("click", navigationHandler);
 // Header
 
+// Slider
 // Carousel
 let slides = document.querySelectorAll(".slide");
 let currentSlide = 0;
@@ -71,19 +72,74 @@ document
 // Carousel
 
 let iphonesVertical = document.querySelectorAll(".slide__iphone-vertical");
-iphonesVertical.forEach(iphone =>
-  iphone.addEventListener("click", () => {
+document
+  .querySelector(".button_vertical-iphone")
+  .addEventListener("click", () => {
     iphonesVertical.forEach(item => {
       item.classList.toggle("slide__iphone-vertical_off");
     });
-  })
-);
+  });
 
 let iphonesHorizontal = document.querySelectorAll(".slide__iphone-horizontal");
-iphonesHorizontal.forEach(iphone =>
-  iphone.addEventListener("click", () => {
+document
+  .querySelector(".button_horizontal-iphone")
+  .addEventListener("click", () => {
     iphonesHorizontal.forEach(item => {
       item.classList.toggle("slide__iphone-horizontal_off");
     });
-  })
+  });
+// Slider
+
+// Portfolio
+const picturesPortfolio = document.querySelectorAll(".portfolio__image");
+var counter = 0;
+
+const portfolioNavigationHandler = event => {
+  event.preventDefault();
+  const menu = document.querySelectorAll(".portfolio-navigation__category");
+  menu.forEach(item => {
+    if (
+      (event.target === item &&
+        !item.classList.contains("portfolio-navigation__category_checked")) ||
+      (event.target === item.firstElementChild &&
+        !item.classList.contains("portfolio-navigation__category_checked"))
+    ) {
+      menu.forEach(item =>
+        item.classList.remove("portfolio-navigation__category_checked")
+      );
+      item.classList.add("portfolio-navigation__category_checked");
+
+      for (let i = 0; i < picturesPortfolio.length; i++) {
+        if (counter === 11) {
+          picturesPortfolio.forEach(pict => pict.classList.remove("order"));
+          counter = 0;
+        }
+        if (!picturesPortfolio[i].classList.contains("order")) {
+          picturesPortfolio[i].classList.add("order");
+          counter++;
+          break;
+        }
+      }
+    }
+  });
+};
+
+document
+  .querySelector(".portfolio-navigation__categories")
+  .addEventListener("click", portfolioNavigationHandler);
+
+const choosePicture = event => {
+  if (event.target.classList.contains("portfolio__image_border")) {
+    event.target.classList.remove("portfolio__image_border");
+  } else {
+    picturesPortfolio.forEach(picture =>
+      picture.classList.remove("portfolio__image_border")
+    );
+    event.target.classList.add("portfolio__image_border");
+  }
+};
+
+picturesPortfolio.forEach(picture =>
+  picture.addEventListener("click", choosePicture)
 );
+// Portfolio

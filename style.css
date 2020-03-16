@@ -56,6 +56,10 @@ body {
   text-transform: uppercase;
 }
 
+.order {
+  order: 1;
+}
+
 /* Header */
 
 .header {
@@ -212,6 +216,28 @@ body {
 
 .slide__iphone-horizontal_off {
   display: none;
+}
+
+.button_vertical-iphone,
+.button_horizontal-iphone {
+  position: absolute;
+  width: 39px;
+  height: 39px;
+}
+
+.button_vertical-iphone {
+  top: 463px;
+  left: 200px;
+}
+
+.button_horizontal-iphone {
+  top: 262px;
+  right: 546px;
+}
+
+.button_vertical-iphone:hover,
+.button_horizontal-iphone:hover {
+  cursor: pointer;
 }
 
 /* Carousel  */
@@ -371,7 +397,7 @@ body {
   padding: 0;
 }
 
-.portfolio-navigation__categories li {
+.portfolio-navigation__category {
   display: flex;
   align-items: center;
   padding: 0 6px 0 7px;
@@ -381,7 +407,7 @@ body {
   cursor: pointer;
 }
 
-.portfolio-navigation__categories li:hover {
+.portfolio-navigation__category:hover {
   color: #dedede;
   border: 1px solid #c5c5c5;
   transition: 0.5s;
@@ -415,6 +441,19 @@ body {
 
 .layout-4-column :nth-child(n + 13) {
   display: none;
+}
+
+.portfolio-navigation__category_checked {
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
+
+.portfolio__image:hover {
+  cursor: pointer;
+}
+
+.portfolio__image_border {
+  border: 5px solid #F06C64;
 }
 
 /* Section Portfolio */
