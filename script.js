@@ -211,7 +211,7 @@ const submitHandler = event => {
   let fragment = document.createDocumentFragment();
   let modalWindow = document.createElement("div");
   let modalContent = document.createElement("div");
-  let contentTitle = document.createElement("h3");
+  let contentTitle = document.createElement("h2");
   contentTitle.textContent = "The letter was sent";
   let contentSubject = document.createElement("p");
   contentSubject.textContent = subject;
@@ -226,8 +226,10 @@ const submitHandler = event => {
     "position: fixed; z-index: 1;width: 100%;height: 100%;overflow: auto;background-color: rgba(0,0,0,0.4);left: 0;top: 0;";
   modalContent.style =
     "background-color: #fff; margin: auto; padding: 20px; border: 1px solid #888; width: 60%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;";
-  contentSubject.style = "text-overflow: ellipsis; overflow: hidden;";
-  contentDescription.style = "text-overflow: ellipsis; overflow: hidden;";
+  contentSubject.style =
+    "text-overflow: ellipsis; overflow: hidden; text-align: justify;";
+  contentDescription.style =
+    "text-overflow: ellipsis; overflow: hidden; text-align: justify;";
   modalButton.style =
     "color: #767e9e; font-size: 28px; font-weight: bold; border: 1px solid #767e9e; border-radius: 7px;";
 
