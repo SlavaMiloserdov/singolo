@@ -55,9 +55,20 @@ function previousSlide(n) {
 
 document
   .querySelector(".slider__button_prev")
-  .addEventListener("click", function() {
+  .addEventListener("click", function(event) {
     if (isEnabled) {
       previousSlide(currentSlide);
+    }
+    if (
+      event.target
+        .closest(".slider")
+        .classList.contains("slider_background-blue")
+    ) {
+      event.target
+        .closest(".slider")
+        .classList.remove("slider_background-blue");
+    } else {
+      event.target.closest(".slider").classList.add("slider_background-blue");
     }
   });
 
@@ -66,6 +77,17 @@ document
   .addEventListener("click", function() {
     if (isEnabled) {
       nextSlide(currentSlide);
+    }
+    if (
+      event.target
+        .closest(".slider")
+        .classList.contains("slider_background-blue")
+    ) {
+      event.target
+        .closest(".slider")
+        .classList.remove("slider_background-blue");
+    } else {
+      event.target.closest(".slider").classList.add("slider_background-blue");
     }
   });
 
