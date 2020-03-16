@@ -143,3 +143,26 @@ picturesPortfolio.forEach(picture =>
   picture.addEventListener("click", choosePicture)
 );
 // Portfolio
+
+// Get a Quote
+
+const actionSubmit = event => {
+  event.preventDefault();
+  let subject = event.target.elements[2].value || "Without subject";
+  let describe = event.target.elements[3].value || "Without description";
+
+  if (event.target.elements[2].value === "Singolo") {
+    subject = "Subject: Singolo";
+  }
+  if (event.target.elements[3].value === "Portfolio project") {
+    describe = "Description: Portfolio project";
+  }
+
+  alert(`The letter was sent\n${subject}\n${describe}`);
+};
+
+document
+  .querySelector(".get-a-quote-form")
+  .addEventListener("submit", actionSubmit);
+
+// Get a Quote
