@@ -1,17 +1,31 @@
 // Header
-const navigationHandler = event => {
+document.addEventListener("scroll", onScroll);
+
+function onScroll(event) {
+  let currentPosition = window.scrollY;
   const menu = document.querySelectorAll(".navigation__link > a");
-  menu.forEach(item => {
-    if (event.target === item) {
-      menu.forEach(item => item.classList.remove("navigation__link_checked"));
-      item.classList.add("navigation__link_checked");
+  const elements = document.querySelectorAll(".wrapper>section");
+
+  elements.forEach(element => {
+    if (
+      element.offsetTop <= currentPosition + 95 &&
+      element.offsetTop + element.offsetHeight > currentPosition + 95
+    ) {
+      menu.forEach(link => {
+        link.classList.remove("navigation__link_checked");
+        if (
+          element.classList.contains(link.getAttribute("href").substring(1))
+        ) {
+          link.classList.add("navigation__link_checked");
+        }
+      });
+    }
+    if (currentPosition >= 2647) {
+      menu.forEach(link => link.classList.remove("navigation__link_checked"));
+      menu[menu.length - 1].classList.add("navigation__link_checked");
     }
   });
-};
-
-document
-  .querySelector(".navigation")
-  .addEventListener("click", navigationHandler);
+}
 // Header
 
 // Slider
@@ -252,7 +266,7 @@ const submitHandler = event => {
 };
 
 document
-  .querySelector(".get-a-quote-form")
+  .querySelector(".contact-form")
   .addEventListener("submit", submitHandler);
 
 // Get a Quote

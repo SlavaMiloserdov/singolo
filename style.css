@@ -8,6 +8,11 @@ body {
   color: #767e9e;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   /* width: 1020px; */
   margin: auto;
@@ -23,14 +28,14 @@ body {
   padding-left: 0.35px;
 }
 
-.section-header__description {
+.section__description {
   margin: -4px 0 11px 0;
   line-height: 3rem;
   font-weight: 300;
   text-align: justify;
 }
 
-.section-header__title {
+.section__title {
   font-style: normal;
   font-size: 3rem;
   line-height: 3rem;
@@ -60,13 +65,29 @@ body {
   order: 1;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+section {
+  position: relative;
+}
+
+.section__anchor {
+  position: absolute;
+  top: -95px;
 }
 
 /* Header */
 
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   color: white;
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
@@ -119,6 +140,7 @@ body {
   color: #fff;
   text-decoration: none;
   letter-spacing: -0.02rem;
+  transition: all 0.25s ease-out;
 }
 
 .navigation__link a:hover {
@@ -154,14 +176,11 @@ body {
 /* Slider */
 
 .slider {
+  padding-top: 73px;
   box-sizing: border-box;
   border-bottom: 6px solid #ea676b;
   background-color: #f06c64;
 }
-
-/* .slider_background-red {
-  background-color: #f06c64;
-} */
 
 .slider_background-blue {
   background-color: #648bf0;
@@ -478,22 +497,22 @@ body {
 
 /* Section Portfolio */
 
-/* Section About-Us */
+/* Section about */
 
-.about-us {
+.about {
   background-color: #f2f2f2;
   border-bottom: 6px solid #fff;
 }
 
-.about-us__wrapper {
+.about__wrapper {
   padding-bottom: 67px;
 }
 
-.about-us .section-header {
+.about .section-header {
   padding-top: 38px;
 }
 
-.about-us .section-header__title {
+.about .section__title {
   margin-top: 24px;
 }
 
@@ -568,28 +587,27 @@ body {
   transition: 0.25s;
 }
 
-/* Section About-Us */
+/* Section about */
 
 /* Section Get a Quote */
 
-.get-a-quote {
+.contact {
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
 }
 
-.get-a-quote {
+.contact {
   color: #f0d8d9;
 }
 
-.get-a-quote__wrapper {
+.contact__wrapper {
   width: 940.5px;
-  /* margin-left: 40px; */
   padding-left: 1px;
 }
 
-.get-a-quote .section-header__description {
+/* .contact .section__description {
   margin-top: -3px;
-}
+} */
 
 .layout-2-column {
   padding-top: 33px;
@@ -598,14 +616,14 @@ body {
   justify-content: space-between;
 }
 
-.get-a-quote-form {
+.contact-form {
   width: 619px;
   display: flex;
   flex-direction: column;
 }
 
-.get-a-quote-form input,
-.get-a-quote-form textarea {
+.contact-form input,
+.contact-form textarea {
   padding: 8px 0 8px 14.7px;
   margin-bottom: 16px;
   border-radius: 5px;
@@ -617,7 +635,7 @@ body {
   background-color: #d6564f;
 }
 
-textarea.get-a-quote-form__description {
+textarea.contact-form__description {
   height: 187px;
   margin-bottom: 0;
   padding-top: 7px;
@@ -635,7 +653,7 @@ textarea.get-a-quote-form__description {
   opacity: 1;
 }
 
-.get-a-quote-form__button {
+.contact-form__button {
   width: 90px;
   margin: 20px auto 0 auto;
   border: 2px solid #a14949;
@@ -644,7 +662,7 @@ textarea.get-a-quote-form__description {
   background-color: #d6564f;
 }
 
-.get-a-quote-form__button:hover {
+.contact-form__button:hover {
   background-color: #2d303a;
 }
 
@@ -773,7 +791,7 @@ textarea.get-a-quote-form__description {
     letter-spacing: 0.01rem;
   }
 
-  .about-us .section-header__title {
+  .about .section__title {
     margin-bottom: 25px;
   }
 
@@ -785,11 +803,11 @@ textarea.get-a-quote-form__description {
     word-spacing: 0.02rem;
   }
 
-  .get-a-quote .section-header__description {
+  .contact .section__description {
     margin-top: -4px;
   }
 
-  .get-a-quote .layout-2-column {
+  .contact .layout-2-column {
     padding-bottom: 23px;
   }
 
@@ -797,14 +815,14 @@ textarea.get-a-quote-form__description {
     box-shadow: none;
   }
 
-  .get-a-quote-form input,
-  .get-a-quote-form textarea {
+  .contact-form input,
+  .contact-form textarea {
     letter-spacing: 0.013rem;
     word-spacing: -0.07rem;
   }
 
-  .get-a-quote-form__subject,
-  textarea.get-a-quote-form__description {
+  .contact-form__subject,
+  textarea.contact-form__description {
     letter-spacing: 0;
     word-spacing: -0.015rem;
   }
@@ -820,7 +838,7 @@ textarea.get-a-quote-form__description {
     letter-spacing: -0.01rem;
   }
 
-  .section-header__description {
+  .section__description {
     width: 939px;
   }
 
@@ -852,7 +870,7 @@ textarea.get-a-quote-form__description {
     letter-spacing: 0.01rem;
   }
 
-  .about-us .section-header__title {
+  .about .section__title {
     margin-bottom: 25px;
   }
 
@@ -864,11 +882,11 @@ textarea.get-a-quote-form__description {
     word-spacing: 0.02rem;
   }
 
-  .get-a-quote .section-header__description {
+  .contact .section__description {
     margin-top: -4px;
   }
 
-  .get-a-quote .layout-2-column {
+  .contact .layout-2-column {
     padding-bottom: 23px;
   }
 
@@ -876,14 +894,14 @@ textarea.get-a-quote-form__description {
     box-shadow: none;
   }
 
-  .get-a-quote-form input,
-  .get-a-quote-form textarea {
+  .contact-form input,
+  .contact-form textarea {
     letter-spacing: 0.013rem;
     word-spacing: -0.07rem;
   }
 
-  .get-a-quote-form__subject,
-  textarea.get-a-quote-form__description {
+  .contact-form__subject,
+  textarea.contact-form__description {
     letter-spacing: 0;
     word-spacing: -0.015rem;
   }
@@ -899,7 +917,7 @@ textarea.get-a-quote-form__description {
     letter-spacing: -0.01rem;
   }
 
-  .section-header__description {
+  .section__description {
     width: 939px;
   }
 
