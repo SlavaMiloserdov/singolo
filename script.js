@@ -200,6 +200,9 @@ function createModalWindow(subject, description) {
   let contentSubject = document.createElement("p");
   contentSubject.textContent = subject;
   let contentDescription = document.createElement("p");
+  if (description.length > 200) {
+    description = description.slice(0, 200) + "...";
+  }
   contentDescription.textContent = description;
   let modalButton = document.createElement("button");
   modalButton.textContent = "OK";

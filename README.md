@@ -18,3 +18,13 @@ https://sun7-6.userapi.com/tpsAzYFdnekxdR0crITTerAEMbTYbnfILGs2sA/n3Ul744YDd0.jp
 https://sun7-9.userapi.com/Mzb4DtLtXPJM5wpWt4Nv7QDVBbt0Lf2iJpQBeA/ZBrRhVXnkRU.jpg
 
 https://sun7-6.userapi.com/A_fhBKIOS4K1F_Ri2bkN0an-X9gHvnXqEV49iA/_9PuF1j9dfE.jpg
+
+# 768px <= width < 1020px
+
+- [x] Header
+- [x] Slider
+- [x] Our services
+- [x] Portfolio
+- [x] About Us
+- [x] Get a quote
+- [x] Footer
