@@ -10,22 +10,59 @@ const onScroll = () => {
       element.offsetTop + element.offsetHeight > currentPosition + 95
     ) {
       menu.forEach(link => {
-        link.classList.remove("navigation__link_checked");
+        link.classList.remove("navigation__link_active");
         if (
           element.classList.contains(link.getAttribute("href").substring(1))
         ) {
-          link.classList.add("navigation__link_checked");
+          link.classList.add("navigation__link_active");
         }
       });
     }
-    if (currentPosition >= 2647) {
-      menu.forEach(link => link.classList.remove("navigation__link_checked"));
-      menu[menu.length - 1].classList.add("navigation__link_checked");
+
+    if (
+      currentPosition + document.documentElement.clientHeight ==
+      document.documentElement.offsetHeight
+    ) {
+      menu.forEach(link => link.classList.remove("navigation__link_active"));
+      menu[menu.length - 1].classList.add("navigation__link_active");
     }
   });
 };
 
 document.addEventListener("scroll", onScroll);
+
+const closeModal = () => {
+  document.querySelector(".navigation").classList.remove("navigation_open");
+  document.querySelector(".modal").remove();
+  document.querySelector(".hamburger").classList.remove("hamburger_open");
+  document.querySelector(".logo").classList.remove("logo_open");
+};
+
+const createModalHamburger = () => {
+  let modal = document.createElement("div");
+  modal.classList.add("modal");
+  document.body.insertAdjacentElement("afterbegin", modal);
+  document.querySelector(".navigation").classList.add("navigation_open");
+  document.querySelector(".logo").classList.add("logo_open");
+
+  document.querySelector(".modal").addEventListener("click", closeModal);
+
+  Array.from(document.querySelector(".navigation").children).forEach(link =>
+    link.firstElementChild.addEventListener("click", closeModal)
+  );
+};
+
+const onHamburger = () => {
+  let hamburger = document.querySelector(".hamburger");
+  if (hamburger.classList.contains("hamburger_open")) {
+    closeModal();
+  } else {
+    hamburger.classList.add("hamburger_open");
+    createModalHamburger();
+  }
+};
+
+document.querySelector(".hamburger").addEventListener("click", onHamburger);
 // Header
 
 // Slider
@@ -142,14 +179,14 @@ const portfolioNavigationHandler = event => {
   tags.forEach(item => {
     if (
       (event.target === item &&
-        !item.classList.contains("portfolio-navigation__category_checked")) ||
+        !item.classList.contains("portfolio-navigation__category_active")) ||
       (event.target === item.firstElementChild &&
-        !item.classList.contains("portfolio-navigation__category_checked"))
+        !item.classList.contains("portfolio-navigation__category_active"))
     ) {
       tags.forEach(item =>
-        item.classList.remove("portfolio-navigation__category_checked")
+        item.classList.remove("portfolio-navigation__category_active")
       );
-      item.classList.add("portfolio-navigation__category_checked");
+      item.classList.add("portfolio-navigation__category_active");
 
       updatePictures();
     }
@@ -175,13 +212,13 @@ document
   .addEventListener("click", portfolioNavigationHandler);
 
 const pictureHandler = event => {
-  if (event.target.classList.contains("portfolio__image_border")) {
-    event.target.classList.remove("portfolio__image_border");
+  if (event.target.classList.contains("portfolio__image_bordered")) {
+    event.target.classList.remove("portfolio__image_bordered");
   } else {
     picturesPortfolio.forEach(picture =>
-      picture.classList.remove("portfolio__image_border")
+      picture.classList.remove("portfolio__image_bordered")
     );
-    event.target.classList.add("portfolio__image_border");
+    event.target.classList.add("portfolio__image_bordered");
   }
 };
 
@@ -198,8 +235,16 @@ function createModalWindow(subject, description) {
   let contentTitle = document.createElement("h2");
   contentTitle.textContent = "The letter was sent";
   let contentSubject = document.createElement("p");
-  contentSubject.textContent = subject;
   let contentDescription = document.createElement("p");
+
+  if (subject.length > 50) {
+    subject = subject.slice(0, 60) + "...";
+  }
+  if (description.length > 200) {
+    description = description.slice(0, 200) + "...";
+  }
+
+  contentSubject.textContent = subject;
   contentDescription.textContent = description;
   let modalButton = document.createElement("button");
   modalButton.textContent = "OK";

@@ -15,16 +15,15 @@
     <div class="wrapper">
       <header class="header">
         <div class="section__wrapper header__wrapper">
-          <div class="logo">
-            <h1 class="logo__title">SINGOLO</h1>
-            <p class="logo__star">*</p>
-          </div>
-          <nav class="header__navigation">
+          <div class="hamburger-menu">
+            <span class="hamburger">
+              <span class="hamburger__line"></span>
+            </span>
             <ul class="navigation">
               <li class="navigation__link">
                 <a
                   href="#home"
-                  class="navigation__link_home text_uppercase navigation__link_checked"
+                  class="navigation__link_home text_uppercase navigation__link_active"
                   >home</a
                 >
               </li>
@@ -43,9 +42,48 @@
                 >
               </li>
               <li class="navigation__link">
+                <a href="#about" class="navigation__link_about text_uppercase"
+                  >about</a
+                >
+              </li>
+              <li class="navigation__link">
                 <a
-                  href="#about"
-                  class="navigation__link_about text_uppercase"
+                  href="#contact"
+                  class="navigation__link_contact text_uppercase"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="logo">
+            <h1 class="logo__title">SINGOLO</h1>
+            <p class="logo__star">*</p>
+          </div>
+          <nav class="header__navigation">
+            <ul class="navigation">
+              <li class="navigation__link">
+                <a
+                  href="#home"
+                  class="navigation__link_home text_uppercase navigation__link_active"
+                  >home</a
+                >
+              </li>
+              <li class="navigation__link">
+                <a
+                  href="#services"
+                  class="navigation__link_services text_uppercase"
+                  >services</a
+                >
+              </li>
+              <li class="navigation__link">
+                <a
+                  href="#portfolio"
+                  class="navigation__link_portfolio text_uppercase"
+                  >portfolio</a
+                >
+              </li>
+              <li class="navigation__link">
+                <a href="#about" class="navigation__link_about text_uppercase"
                   >about</a
                 >
               </li>
@@ -60,8 +98,8 @@
           </nav>
         </div>
       </header>
-      <section class="home slider slider_background-red">
-        <a name="home" class="section__anchor"></a>
+      <section class="home slider">
+        <a id="home" class="section__anchor"></a>
         <h2 class="hidden"></h2>
         <div class="section__wrapper slider__wrapper">
           <div class="slider-container">
@@ -103,7 +141,7 @@
       </section>
 
       <section class="services">
-        <a name="services" class="section__anchor"></a>
+        <a id="services" class="section__anchor"></a>
         <div class="section__wrapper services__wrapper">
           <div class="section-header">
             <h2 class="section__title text_color_title">
@@ -177,7 +215,7 @@
                 </h3>
                 <p class="advantage__text">
                   Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
-                  blandit nunc ligula. Prae&shy;sent elit leo.
+                  blandit nunc ligula. Praesent elit leo.
                 </p>
               </div>
             </div>
@@ -218,7 +256,7 @@
       </section>
 
       <section class="portfolio">
-        <a name="portfolio" class="section__anchor"></a>
+        <a id="portfolio" class="section__anchor"></a>
         <div class="section__wrapper portfolio__wrapper">
           <div class="section-header">
             <h2 class="section__title text_color_title">Portfolio</h2>
@@ -229,7 +267,7 @@
             <div class="portfolio-navigation">
               <ul class="portfolio-navigation__categories">
                 <li
-                  class="portfolio-navigation__category portfolio-navigation__category_checked"
+                  class="portfolio-navigation__category portfolio-navigation__category_active"
                 >
                   <a href="#">All</a>
                 </li>
@@ -245,65 +283,65 @@
               </ul>
             </div>
           </div>
-          <div class="layout-4-column">
+          <div class="layout-4-column portfolio-container">
             <img
               src="assets/images/portfolio-images/row1/1.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row1/2.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row1/3.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row1/4.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row2/1.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row2/2.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row2/3.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row2/4.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row3/1.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row3/2.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row3/3.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
             <img
               src="assets/images/portfolio-images/row3/4.png"
-              alt="image didn't load"
+              alt="Portfolio image"
               class="portfolio__image"
             />
           </div>
@@ -311,7 +349,7 @@
       </section>
 
       <section class="about">
-        <a name="about" class="section__anchor"></a>
+        <a id="about" class="section__anchor"></a>
         <div class="section__wrapper about__wrapper">
           <div class="section-header">
             <h2 class="section__title text_color_title">About Us</h2>
@@ -322,7 +360,7 @@
               cursus commodo, tortor mauris condimentum nibh.
             </p>
           </div>
-          <div class="layout-3-column">
+          <div class="layout-3-column employee-wrapper">
             <div class="employee first-employee">
               <img
                 src="assets/images/about-us/photo1.png"
@@ -336,26 +374,30 @@
                   purus, nec rutrum tellus dolor id lorem.
                 </p>
                 <div class="social-media employee__social-media">
-                  <img
-                    src="assets/images/social-media-icons/facebook.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
-                  <img
-                    src="assets/images/social-media-icons/google.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
-                  <img
-                    src="assets/images/social-media-icons/twitter.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
-                  <img
-                    src="assets/images/social-media-icons/linkedin.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/facebook.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/google.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/twitter.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/linkedin.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -372,26 +414,30 @@
                   quam laoreet, viverra lacus ut, ultrices velit.
                 </p>
                 <div class="social-media employee__social-media">
-                  <img
-                    src="assets/images/social-media-icons/facebook.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
-                  <img
-                    src="assets/images/social-media-icons/google.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
-                  <img
-                    src="assets/images/social-media-icons/twitter.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
-                  <img
-                    src="assets/images/social-media-icons/linkedin.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/facebook.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/google.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/twitter.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/linkedin.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -410,26 +456,30 @@
                   turpis, et consequat felis. Quisque condimentum.
                 </p>
                 <div class="social-media employee__social-media">
-                  <img
-                    src="assets/images/social-media-icons/facebook.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
-                  <img
-                    src="assets/images/social-media-icons/google.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
-                  <img
-                    src="assets/images/social-media-icons/twitter.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
-                  <img
-                    src="assets/images/social-media-icons/linkedin.png"
-                    alt="image didn't load"
-                    class="social-media__ico"
-                  />
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/facebook.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/google.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/twitter.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/social-media-icons/linkedin.png"
+                      alt="image didn't load"
+                      class="social-media__ico"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -437,8 +487,8 @@
         </div>
       </section>
 
-      <section class="contact" >
-        <a name="contact" class="section__anchor"></a>
+      <section class="contact">
+        <a id="contact" class="section__anchor"></a>
         <div class="section__wrapper contact__wrapper">
           <div class="section-header">
             <h2 class="section__title text_color_title_light">
@@ -451,26 +501,25 @@
               cursus commodo, tortor mauris condimentum nibh.
             </p>
           </div>
-          <div class="layout-2-column">
-            <form action="URL" method="POST" class="contact-form">
+          <div class="layout-2-column contact-container">
+            <form method="POST" class="contact-form">
               <input
                 type="text"
                 class="contact-form__name"
-                placeholder="Name (Required)"
+                placeholder="Name (required)"
                 pattern="[a-zA-Zа-яА-Я]+"
                 required
               />
               <input
                 type="email"
                 class="contact-form__email"
-                placeholder="Email (Required)"
+                placeholder="Email (required)"
                 required
               />
               <input
                 type="text"
                 class="contact-form__subject"
                 placeholder="Subject"
-                maxlength="110"
               />
               <textarea
                 name="describe"
@@ -478,16 +527,15 @@
                 cols="30"
                 rows="8"
                 placeholder="Describe your project in detail..."
-                maxlength="540"
               ></textarea>
-              <button type="submit" class="contact-form__button">
-                Submit
+              <button type="submit" class="contact-form__button text_uppercase">
+                Send
               </button>
             </form>
             <div class="contact-info">
               <h3 class="contact-info__title">Contact Information</h3>
               <p class="contact-info__description">
-                Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra
+                Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
                 nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat
                 libero. Nulla sed nunc et tortor luctus faucibus. Morbi at
                 aliquet turpis, et consequat felis
@@ -509,9 +557,8 @@
       </section>
       <footer class="footer">
         <div class="section__wrapper footer__wrapper">
-          <!-- <p class="copyright text_color_title">© Copyright 2013 · by PSDchat.com</p> -->
           <p class="copyright text_color_title">© Copyright 2013</p>
-          <div class="social-media">
+          <div class="social-media footer__social-media">
             <a href="#"
               ><img
                 src="assets/images/social-media-icons/facebook.png"
