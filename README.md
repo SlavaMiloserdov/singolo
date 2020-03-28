@@ -1,30 +1,23 @@
 # Привет!
 
-## Все файлы находятся в ветках gh-pages и master
+### Все файлы находятся в ветках gh-pages и master
 
-## Все дедлайны соблюдены
+### Все дедлайны соблюдены
 
-Если возникнут какие-либо вопросы, или работа не будет тянуть на 100 баллов (смещение будет какое-нибудь или ещё что-то) отпишите пожалуйста в вк https://vk.com/miloserdovvv или дискорд.
-Ничего менять не будем, это для того чтобы лучше понять в чём причина.
+### Все ньюансы по ТЗ реализованы
 
-#### Прикладываю скриншоты, как страница отображается на моём экране (полное соответствие):
+## Если возникнут какие-либо вопросы, или Вы посчитаете, что работа не тянет на 100 баллов (какие-то ошибки или ещё что-то) большая просьба написать в вк https://vk.com/miloserdovvv или телеграм https://t.me/VyacheslavM69 !
 
-https://sun7-7.userapi.com/0-sj8vRUiNP2203_mpMwg4AlJ2Cn3F7R7nsM9A/bQLcEfmbufk.jpg
+# Внимание
 
-https://sun7-7.userapi.com/u7diLn2p8lV3ErPgrIMyZd3gT2XYKIvLqRCG8A/82p-HDNUQoM.jpg
+### Работа делалась в режиме респонсив, соответственно просьба проверять так, как было прописано в ТЗ https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/responsive.png
 
-https://sun7-6.userapi.com/tpsAzYFdnekxdR0crITTerAEMbTYbnfILGs2sA/n3Ul744YDd0.jpg
+### При проверке Responsiv, при разрешении в 375px текст в некоторых местах, отличается, потому что есть свойство text-align:justify, что является ПРАВИЛЬНЫМ решением. Прилагаю ссылку, где этот момент обсуждался: https://youtu.be/fFDw7AH2OXo?t=4605
 
-https://sun7-9.userapi.com/Mzb4DtLtXPJM5wpWt4Nv7QDVBbt0Lf2iJpQBeA/ZBrRhVXnkRU.jpg
+### Т.е. при проверке сетки Our Services можете установить значение Y в Pixel Perfect на -30, чтобы уравнять текст, в блоке About Us на -59, в блоке Get a Quote на -91
 
-https://sun7-6.userapi.com/A_fhBKIOS4K1F_Ri2bkN0an-X9gHvnXqEV49iA/_9PuF1j9dfE.jpg
+### Телефоны на 1-ом слайде меняют своё состояние по нажатию на кнопку
 
-# 768px <= width < 1020px
+### Рамка которая должна появляться при нажатии на картинку в блоке портфолио сделана тенью - это не является ошибкой, на стриме обсуждалось(ссылка на этот момент): https://youtu.be/fFDw7AH2OXo?t=2525
 
-- [x] Header
-- [x] Slider
-- [x] Our services
-- [x] Portfolio
-- [x] About Us
-- [x] Get a quote
-- [x] Footer
+### При разрешении экрана 768px в блоке Get a Quote Contact information не совпадает с макетом, т.к. на макете блок выходит за границы, также обсуждалось
