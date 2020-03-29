@@ -237,12 +237,12 @@ function createModalWindow(subject, description) {
   let contentSubject = document.createElement("p");
   let contentDescription = document.createElement("p");
 
-  if (subject.length > 50) {
-    subject = subject.slice(0, 60) + "...";
-  }
-  if (description.length > 200) {
-    description = description.slice(0, 200) + "...";
-  }
+  // if (subject.length > 60) {
+  //   subject = subject.slice(0, 60) + "...";
+  // }
+  // if (description.length > 200) {
+  //   description = description.slice(0, 200) + "...";
+  // }
 
   contentSubject.textContent = subject;
   contentDescription.textContent = description;

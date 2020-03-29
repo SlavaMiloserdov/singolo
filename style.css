@@ -835,7 +835,6 @@ textarea.contact-form__description {
 /* Styles for Firefox and old version Edge */
 
 @-moz-document url-prefix() {
-
   p,
   a {
     word-spacing: -0.14rem;
@@ -914,7 +913,6 @@ textarea.contact-form__description {
 }
 
 @supports (-ms-ime-align: auto) {
-
   p,
   a {
     word-spacing: -0.14rem;
@@ -997,6 +995,12 @@ textarea.contact-form__description {
 }
 
 /* Styles for Firefox and old version Edge */
+
+@media screen and (min-width: 1021px) {
+  .navigation__link a:hover {
+    color: #f06c64;
+  }
+}
 
 /* 768px <= width < 1020 */
 
@@ -1159,7 +1163,7 @@ textarea.contact-form__description {
     margin-left: 0.3vw;
   }
 
-  .employee+.employee {
+  .employee + .employee {
     padding-left: 1.8vw;
   }
 
@@ -1279,7 +1283,7 @@ textarea.contact-form__description {
     padding: 235px 0 0 70px;
     margin-top: 0;
 
-    background-color: #2D303A;
+    background-color: #2d303a;
 
     transition-duration: 0.5s;
   }
@@ -1300,7 +1304,7 @@ textarea.contact-form__description {
     font-size: 2.4rem;
   }
 
-  .navigation__link+.navigation__link {
+  .navigation__link + .navigation__link {
     padding-top: 31px;
   }
 
@@ -1330,7 +1334,7 @@ textarea.contact-form__description {
 
   .hamburger-menu {
     display: inline;
-    background-color: #2D303A;
+    background-color: #2d303a;
     box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
   }
 
@@ -1367,7 +1371,7 @@ textarea.contact-form__description {
   }
 
   .slider {
-    padding-top: calc(71/375*100vw);
+    padding-top: 71px;
   }
 
   .slider__button {
@@ -1400,7 +1404,7 @@ textarea.contact-form__description {
       "a"
       "a";
     padding: 17px 0 15px 1px;
-    grid-gap: calc(53 / 768 * 100vw) calc(19 / 768 * 100vw);
+    grid-gap: 26px 0;
   }
 
   .advantage__description {
@@ -1425,7 +1429,7 @@ textarea.contact-form__description {
     width: calc(151 / 375 * 100vw);
   }
 
-  .portfolio__image:nth-child(n+9) {
+  .portfolio__image:nth-child(n + 9) {
     display: none;
   }
 
@@ -1445,7 +1449,7 @@ textarea.contact-form__description {
     width: calc(315 / 375 * 100vw);
   }
 
-  .employee+.employee {
+  .employee + .employee {
     padding-left: 0;
     padding-top: 8vw;
   }
@@ -1512,7 +1516,3 @@ textarea.contact-form__description {
 }
 
 /* 375px < width < 767 */
-
-/* width < 375 */
-
-@media screen and (min-width: 320px) {}
